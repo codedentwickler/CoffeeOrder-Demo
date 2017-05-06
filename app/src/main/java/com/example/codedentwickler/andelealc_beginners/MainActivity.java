@@ -86,6 +86,34 @@ public class MainActivity extends AppCompatActivity {
         display(quantity);
     }
 
-   z
+    public void onCheckboxClicked(View view) {
+        boolean checked = ((CheckBox)view).isChecked();
+
+        int idOfCheckedCheckBox = view.getId();
+
+        switch (idOfCheckedCheckBox) {
+
+            case R.id.milk:
+                if (checked){
+                    withMilk = true;
+                    priceOfMilk = 10;
+                } else {
+                    withMilk = false;
+                    priceOfMilk = 0;
+                }
+
+                break;
+
+            case R.id.sugar:
+                if (checked) {
+                    withSugar = true;
+                    priceOfSugar = 5;
+                } else {
+                    withSugar = false;
+                    priceOfSugar = 0;
+                }
+
+                break;
+        }
     }
 }
