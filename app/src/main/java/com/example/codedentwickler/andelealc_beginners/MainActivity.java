@@ -12,8 +12,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     int quantity = 0;
-    double priceOfMilk = 0;
-    double priceOfSugar = 0;
+    double priceOfMilk = 10;
+    double priceOfSugar = 5;
     boolean withMilk = false;
     boolean withSugar = false;
     private String totalPriceForOrder;
