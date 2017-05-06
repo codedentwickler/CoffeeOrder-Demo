@@ -3,4 +3,11 @@
     <string name="text_order">Order</string>
     <string name="text_quantity">QUANTITY</string>
     <string name="text_price">Price</string>
+    <string name="text_toppings">toppings</string>
+    <string name="sugar">Sugar</string>
+    <string name="milk">Milk</string>
+    <string name="subject">Coffee Order For</string>
+    <string name="name_hint">Name</string>
+    <string name="email">Email</string>
+    <string name="enter_name_email_toast_message">Please enter your name and Email to get the summary of your Order</string>
 </resources>
