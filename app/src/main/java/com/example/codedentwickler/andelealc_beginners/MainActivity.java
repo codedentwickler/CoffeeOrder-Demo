@@ -25,16 +25,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void submitOrder(View view) {
+
         EditText nameEditText = (EditText) findViewById(R.id.name_edit_text);
         EditText emailEditText = (EditText) findViewById(R.id.email_edit_text);
 
         String name = nameEditText.getText().toString().trim();
         String[] email = new String[] {emailEditText.getText().toString().trim()};
+
         int priceOfOneCoffeeCup = 25;
-        displayPrice(quantity * priceOfOneCoffeeCup);
 
         String sugar = withSugar ? "Yes" : "No";
         String milk = withMilk ? "Yes" : "No";
+
+        displayPrice(quantity * priceOfOneCoffeeCup);
 
         String message = "Name: "+name + "\nWanted Sugar: "+sugar
                 + "\nWanted Milk: "+milk + "\nQuantity: " +quantity
@@ -54,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, R.string.enter_name_email_toast_message,Toast.LENGTH_LONG).show();
         }
-
     }
 
     private void display(int number) {
