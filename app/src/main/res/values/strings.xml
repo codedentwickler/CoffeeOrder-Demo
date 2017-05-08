@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndeleALC-Beginners</string>
+    <string name="app_name">Coffee Order App</string>
     <string name="text_order">Order</string>
     <string name="text_quantity">QUANTITY</string>
     <string name="text_price">Price</string>
